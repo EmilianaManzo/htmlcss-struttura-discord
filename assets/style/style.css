@@ -22,6 +22,8 @@ body{
 }
 
 
+
+
 header{
   background-color: rgb(150, 251, 251);
   height: 80px;
@@ -62,6 +64,9 @@ nav ul {
 
 nav ul li {
   list-style: none;
+}
+
+nav li a {
   text-decoration: none;
   color: black;
 }
@@ -73,3 +78,32 @@ nav ul li {
   align-items: center;
   width: 150px;
 }
+
+.jumbotron{
+  height: 300px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_jumbo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 250px;
+  background-color: fuchsia;
+}
+
+.container_jumbo h1{
+  margin: 20px;
+  color: white;
+}
+
+.container_jumbo p{
+  margin: 0 0 10px 0;
+  color: white;
+  text-align: center;
+}
+
