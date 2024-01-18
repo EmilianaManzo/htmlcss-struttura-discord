@@ -21,7 +21,12 @@ body{
   cursor: pointer;
 }
 
+.container{
+  width: 800px;
+  height: 250px;
+  display: flex;
 
+}
 
 
 header{
@@ -105,5 +110,47 @@ nav li a {
   margin: 0 0 10px 0;
   color: white;
   text-align: center;
+}
+
+
+.info_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.info_section.gray{
+  background-color: lightgray;
+}
+
+.info_section.big_gray{
+  height: 600px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img{
+  width: 70%;
+  background-color: pink;
+}
+
+.container .text{
+  width: 30%;
+  background-color: lightskyblue;
+}
+
+
+
+.info_section.big_gray .big_container{
+  width: 800px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgreen;
 }
 
