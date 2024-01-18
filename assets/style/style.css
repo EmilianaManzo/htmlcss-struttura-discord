@@ -21,13 +21,28 @@ body{
   cursor: pointer;
 }
 
+.btn.btn_download::before{
+  content: "\2193";
+  padding-right: 3px;
+  /* color: white; */
+}
+
 .container{
   width: 800px;
   height: 250px;
   display: flex;
-
+  
 }
 
+.info_section h1{
+  text-align: center;
+  margin: 20px;
+}
+
+.info_section p{
+  text-align: center;
+  margin: 0 0 10px 0 ;
+}
 
 header{
   background-color: rgb(150, 251, 251);
@@ -42,7 +57,7 @@ header{
   
 }
 
-.logo{
+.logo-up{
   display: flex;
   /* justify-content: center;
   flex-grow: 1;
@@ -51,7 +66,7 @@ header{
   background-color: orange;
 }
 
-.logo .image{
+.logo-up .image{
   width: 150px;
   /* text-align: center; */
 }
@@ -102,7 +117,7 @@ nav li a {
 }
 
 .container_jumbo h1{
-  margin: 20px;
+  margin:20px;
   color: white;
 }
 
@@ -111,6 +126,14 @@ nav li a {
   color: white;
   text-align: center;
 }
+
+/* .btn.btn_download:hover{
+  background-color: da inserire domani
+}
+
+.btn.btn_openbrowser:hover{
+  background-color: da inserire domani
+} */
 
 
 .info_section{
@@ -140,9 +163,10 @@ nav li a {
 .container .text{
   width: 30%;
   background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 .info_section.big_gray .big_container{
   width: 800px;
@@ -154,3 +178,73 @@ nav li a {
   background-color: darkgreen;
 }
 
+/* .btn.btn_blu:hover{
+  background-color: da inserire domani
+}  */
+
+.big_container h3{
+  text-align: center;
+  margin: 20px;
+}
+
+
+footer{
+  background-color: #24272a;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_up{
+  width: 800px;
+  height: 250px;
+  border-bottom: 2px solid #7289db ;
+  display: flex;
+}
+
+.footer_up .left-text{
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #e0767f;
+}
+
+.left-text h3{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.left-text .language{
+  margin-bottom: 10px;
+}
+
+.footer_up .right-text{
+  width: 75%;
+  display: flex;
+}
+
+.right-text .column{
+  width: calc(100%/4);
+  background-color: rgb(29, 155, 146);
+}
+
+.right-text ul li{
+  list-style: none;
+}
+
+.footer_down{
+  width: 800px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+}
+
+.logo,
+.sign_in{
+  background-color: pink;
+}
